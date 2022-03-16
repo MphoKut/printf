@@ -26,6 +26,28 @@ The function is variadic and thus takes any amount of arguments following the fo
 
 You can do much more, by combining  specifiers like string or integer (full list of specifiers below) with flags, length modifiers, width, and precision.
 
+To use the _printf compile all .c files in the repository and include the header holberton.h with any main function.
+
+Example main.c:
+
+#include "holberton.h"
+
+int main(void)
+{
+    _printf("Hello, World!");
+
+    return (0);
+}
+
+Compilation:
+
+$ gcc *.c -o 
+Output:
+
+$
+Hello, World!
+$
+
 **Return value of `_printf()`**
 `_printf()` returns negative one (`-1`) upon failure, and the number of bytes (as an `int`) written to standard output upon success.
 
